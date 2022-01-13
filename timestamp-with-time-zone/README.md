@@ -388,3 +388,20 @@ SELECT '2018-09-02 07:09:19'::timestamp AT TIME ZONE 'Asia/Tokyo' AT TIME ZONE '
 ```
 
 > This gives the `America/Chicago` time for the supplied `Asia/Tokyo` time
+
+## Difference between timestamp and timestamp-with-time-zone
+
+```sql
+SELECT 
+	  tstz AT TIME ZONE 'America/Chicago' AS timestamp_with_time_zone,
+	  ts AT TIME ZONE 'America/Chicago' AS timestamp
+FROM timestamp_demo;
+
+timestamp_with_time_zone |         timestamp 
+-----------------------------------------------------
+2022-01-13 10:53:00.000	 | 2022-01-13 15:53:00.000 +0000
+2022-01-13 11:53:00.000	 | 2022-01-13 15:53:00.000 +0000
+2022-01-13 10:53:00.000	 | 2022-01-13 15:53:00.000 +0000
+2022-01-13 10:53:00.000	 | 2022-01-13 15:53:00.000 +0000
+2022-01-13 10:53:00.000  | 2022-01-13 15:53:00.000 +0000
+```
