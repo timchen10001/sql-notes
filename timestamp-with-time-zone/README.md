@@ -137,7 +137,7 @@ SELECT '2018-09-02 07:09:19'::timestamp AT TIME ZONE 'America/Chicago';
 
 ------------------------
 
- 2018-09-02 08:09:19-04
+ 2018-09-02 20:09:19.000 +0800
 
 
 SELECT '2018-09-02 07:09:19'::timestamp AT TIME ZONE 'America/Los_Angeles';
@@ -146,7 +146,7 @@ SELECT '2018-09-02 07:09:19'::timestamp AT TIME ZONE 'America/Los_Angeles';
 
 ------------------------
 
- 2018-09-02 10:09:19-04
+ 2018-09-02 22:09:19.000 +0800
 
 
 SELECT '2018-09-02 07:09:19'::timestamp AT TIME ZONE 'Asia/Tokyo';
@@ -155,7 +155,7 @@ SELECT '2018-09-02 07:09:19'::timestamp AT TIME ZONE 'Asia/Tokyo';
 
 ------------------------
 
- 2018-09-01 18:09:19-04
+ 2018-09-02 06:09:19.000 +0800
 
 ```
 
@@ -172,7 +172,7 @@ SELECT '2018-09-02 07:09:19'::timestamp;
 
 ------------------------
 
- 2018-09-02 07:09:19-04
+ 2018-09-02 07:09:19.000
 
 
 SELECT '2018-09-02 07:09:19-10'::timestamp;
@@ -181,7 +181,7 @@ SELECT '2018-09-02 07:09:19-10'::timestamp;
 
 ------------------------
 
- 2018-09-02 07:09:19-04
+ 2018-09-02 07:09:19.000
 
 
 SELECT '2018-09-02 07:09:19-12'::timestamp;
@@ -190,7 +190,7 @@ SELECT '2018-09-02 07:09:19-12'::timestamp;
 
 ------------------------
 
- 2018-09-02 07:09:19-04
+ 2018-09-02 07:09:19.000
 
 ```
 
@@ -205,7 +205,7 @@ SELECT '2018-09-02 07:09:19'::timestamp AT TIME ZONE 'America/Chicago';
 
 ------------------------
 
- 2018-09-02 08:09:19-04
+ 2018-09-02 20:09:19.000 +0800
 
 
 SELECT '2018-09-02 07:09:19-10'::timestamp AT TIME ZONE 'America/Chicago';
@@ -214,7 +214,7 @@ SELECT '2018-09-02 07:09:19-10'::timestamp AT TIME ZONE 'America/Chicago';
 
 ------------------------
 
- 2018-09-02 08:09:19-04
+ 2018-09-02 20:09:19.000 +0800
 
 
 SELECT '2018-09-02 07:09:19-12'::timestamp AT TIME ZONE 'America/Chicago';
@@ -223,7 +223,7 @@ SELECT '2018-09-02 07:09:19-12'::timestamp AT TIME ZONE 'America/Chicago';
 
 ------------------------
 
- 2018-09-02 08:09:19-04
+ 2018-09-02 20:09:19.000 +0800
 ```
 
 ---
@@ -237,7 +237,7 @@ SELECT '2018-09-02 07:09:19-04'::timestamptz AT TIME ZONE 'America/Chicago';
 
 ---------------------
 
- 2018-09-02 06:09:19
+ 2018-09-02 06:09:19.000
 
 
 SELECT '2018-09-02 07:09:19-04'::timestamptz AT TIME ZONE 'America/Los_Angeles';
@@ -246,7 +246,7 @@ SELECT '2018-09-02 07:09:19-04'::timestamptz AT TIME ZONE 'America/Los_Angeles';
 
 ---------------------
 
- 2018-09-02 04:09:19
+ 2018-09-02 04:09:19.000
 
 
 SELECT '2018-09-02 07:09:19-04'::timestamptz AT TIME ZONE 'Asia/Tokyo';
@@ -255,7 +255,7 @@ SELECT '2018-09-02 07:09:19-04'::timestamptz AT TIME ZONE 'Asia/Tokyo';
 
 ---------------------
 
- 2018-09-02 20:09:19
+ 2018-09-02 20:09:19.000
 ```
 
 ---
@@ -269,7 +269,7 @@ SELECT '2018-09-02 07:09:19-04'::timestamptz AT TIME ZONE 'America/Chicago';
 
 ---------------------
 
- 2018-09-02 06:09:19
+ 2018-09-02 06:09:19.000
 
 
 SELECT '2018-09-02 07:09:19-05'::timestamptz AT TIME ZONE 'America/Chicago';
@@ -278,7 +278,7 @@ SELECT '2018-09-02 07:09:19-05'::timestamptz AT TIME ZONE 'America/Chicago';
 
 ---------------------
 
- 2018-09-02 07:09:19
+ 2018-09-02 07:09:19.000
 
 
 SELECT '2018-09-02 07:09:19-06'::timestamptz AT TIME ZONE 'America/Chicago';
@@ -287,7 +287,7 @@ SELECT '2018-09-02 07:09:19-06'::timestamptz AT TIME ZONE 'America/Chicago';
 
 ---------------------
 
- 2018-09-02 08:09:19
+ 2018-09-02 08:09:19.000
  
 ```
 
@@ -304,7 +304,7 @@ SELECT '2018-09-02 07:09:19' AT TIME ZONE 'America/Chicago';
 
 ---------------------
 
- 2018-09-02 06:09:19
+ 2018-09-01 18:09:19.000
 
 
 SELECT '2018-09-02 07:09:19-10' AT TIME ZONE 'America/Chicago';
@@ -313,7 +313,7 @@ SELECT '2018-09-02 07:09:19-10' AT TIME ZONE 'America/Chicago';
 
 ---------------------
 
- 2018-09-02 12:09:19
+ 2018-09-02 12:09:19.000
 ```
 
 ---
@@ -327,7 +327,7 @@ SELECT '2018-09-02 07:09:19'::timestamp AT TIME ZONE 'America/Chicago' AT TIME Z
 
 ---------------------
 
- 2018-09-02 07:09:19
+ 2018-09-02 07:09:19.000
 
 
 SELECT '2018-09-02 07:09:19-04'::timestamptz AT TIME ZONE 'America/Chicago' AT TIME ZONE 'America/Chicago';
@@ -336,7 +336,7 @@ SELECT '2018-09-02 07:09:19-04'::timestamptz AT TIME ZONE 'America/Chicago' AT T
 
 ------------------------
 
- 2018-09-02 07:09:19-04
+ 2018-09-02 19:09:19.000 +0800
 ```
 
 > As you can see the two `AT TIME ZONE` calls cancel each other out. The first creates a `TIMESTAMP WITH  TIME ZONE` in the `America/Chicago` time zone using the supplied date and time, and then shifts the value to that same time zone, removing the time zone designation.
@@ -354,7 +354,7 @@ SELECT '2018-09-02 07:09:19'::timestamp AT TIME ZONE 'Asia/Tokyo' AT TIME ZONE '
 
 ---------------------
 
- 2018-09-01 17:09:19
+ 2018-09-01 17:09:19.000
 ```
 
 > This gives the `America/Chicago` time for the supplied `Asia/Tokyo` time
