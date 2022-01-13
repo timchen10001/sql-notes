@@ -1,3 +1,33 @@
+# DBeaver local configuration
+1. Go to directory: "/usr/share/dbeaver"
+2. Edit "dbeaver.ini" file
+3. In that file add "-Duser.timezone=UTC" this line under "-vmargs" tag
+4. Save it and restart dbeaver.
+5. Enjoy with correct date without any date conversion.
+
+> Finally your dbeaver.ini file will look like this:
+
+```
+-startup
+plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar
+--launcher.library
+plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.551.v20171108-1834
+-showsplash
+--launcher.GTK_version
+2
+-vmargs
+-XX:+IgnoreUnrecognizedVMOptions
+--add-modules=ALL-SYSTEM
+-Xms64m
+-Xmx1024m
+-Duser.timezone=UTC 加這個
+```
+
+```bash
+  -- macOS
+  cat /Applications/DBeaver.app/Contents/Eclipse/dbeaver.ini
+```
+
 ## Checkout ```pg_timezone_names```
 
 ```sql
